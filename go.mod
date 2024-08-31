@@ -1,4 +1,4 @@
-module github.com/quaxlyqueen/web-services
+module github.com/quaxlyqueen/services
 
 go 1.22.5
 
