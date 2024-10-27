@@ -54,3 +54,26 @@ type ResponseWHistory struct {
 	EvalCount     int    `json:"eval_count"`
 	EvalDuration  int    `json:"eval_duration"`
 }
+
+type WebpagesStructure struct {
+  Domain          string                `mapstructure:"domain"`
+  WebpageDir      string                `mapstructure:"webpage_dir"`
+  WebpagePort     int 									`mapstructure:"webpage_port"`
+}
+
+type ConfigStructure struct {
+  TextModel       string                `mapstructure:"text_model"`
+  ImageModel      string               	`mapstructure:"image_model"`
+  VideoModel      string                `mapstructure:"video_model"`
+  DocModel        string                `mapstructure:"doc_model"`
+  ResponseStream  bool                	`mapstructure:"response_stream"`
+
+  Domain          string                `mapstructure:"domain"`
+  RouterPort      string 								`mapstructure:"router_port"`
+  API             string                `mapstructure:"api"`
+  APIPort         string 								`mapstructure:"api_port"`
+  AuthPort 				string 								`mapstructure:"auth_port"`
+  //Webpages        WebpagesStructure     `mapstructure:"webpages"`
+  WebpageDir      string                `mapstructure:"webpage_dir"`
+  WebpagePort     string 									`mapstructure:"webpage_port"`
+}
